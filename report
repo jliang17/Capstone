@@ -1,0 +1,48 @@
+Applied Data Science Capstone
+
+
+
+Introduction/Business Problem
+
+The idea of this study is to help people planning to open a new restaurant in Toronto to choose the right location by providing data about the income and population of each neighborhood as well as the competitors already present in the same regions.
+
+
+
+Downloading and Prepping Data
+
+I’ll combine Toronto’s Census that contains Population, Average income per Neighborhood with Toronto’s Neighborhoods shapefile, and Foursquare API to collect competitors in the same neighborhoods.
+
+Toronto’s Census data is publicly available at this website: https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#8c732154-5012-9afe-d0cd-ba3ffc813d5a
+
+Toronto neighborhood profil and Foursquare API data:https://www.toronto.ca/ext/open_data/catalog/data_set_files/2016_neighbourhood_profiles.csv
+
+
+
+Methodology
+
+Cleaned the data at first.
+Keeps the City, PostalCode,Neighborhoods,Borough and relevant income and population for analysis.
+
+Utilized the data of Census and Neighborhoods to explore the customer’s group info at first and then utilized the following method to detect the competition in the areas.
+
+-Using K-Means Clustering Approach
+
+Visualized the results.
+
+
+
+Results
+
+Comparing the maps we can notice the majority of the restaurants grouped on main streets and on the south of the city, although some of the wealthiest neighborhoods are up to the north. Also, the areas with a dense population don’t reflect on the number of restaurants.
+
+
+
+Discussion
+
+I am planning to utilize the customer profile data to add more clustering visualization but it’s hard to identify it.
+
+
+
+Conclusion
+
+I divided the neighborhood into 10 different clusters, which have very-similar neighborhoods around them. For the owners who want to open a restaurant in Toronto, they may want to explore more chances towards the west/east Toronto, where the customer profile is great and also the competition is comparatively less. This report will help the small business owners who want to open the restaurant in Canada by detecting the neighbor environment and competition. It can be improved by adding more information such as transportation and mall locations to improve the decision-making process.
